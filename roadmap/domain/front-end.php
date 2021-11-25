@@ -45,7 +45,7 @@ include_once('../../includes/classArticle.php');
       <ol>
                 <?php foreach ($articles as $article){ ?>
                 <li>
-                    <a href="article.php?id=<?php echo $article['article_id']?>">
+                    <a href="../../articleView/article.php?id=<?php echo $article['article_id']?>">
                         <?php echo $article['article_title'];?>
                     </a>
                 </li>

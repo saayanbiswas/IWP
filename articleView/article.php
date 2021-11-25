@@ -1,6 +1,6 @@
 <?php
-include_once('../../includes/connection.php');
-include_once('../../includes/classArticle.php');
+include_once('../includes/connection.php');
+include_once('../includes/classArticle.php');
 
 $article = new Article();
 
