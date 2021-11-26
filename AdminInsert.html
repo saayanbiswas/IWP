@@ -7,8 +7,17 @@
         <form method="post" action="databaseinsert.php" >
             <h4>Article_id:</h4>
             <input type="text" name="article_id" id="article_id"/>
-            <h4>Article_domain:</h4>
-            <input type="text"  name="article_domain" id="article_domain"/>
+
+            <label for="article_domain">Article_domain:</label>
+            <select name="article_domain" id="article_domain">
+            <option value="Front-End-Development">Front-End-Development</option>
+            <option value="Back-End-Development">Back-End-Development</option>
+            <option value="Competitive-Programming">Competitive-Programming</option>
+            <option value="App-Development">App-Development</option>
+            <option value="Cyber-Security">Cyber-Security</option>
+            <option value="Cloud-Computing">Cloud-Computing</option>
+            </select>
+
             <h4>Article_title:</h4>
             <input type="text" name="article_title"  id="article_title"/>
             <h4>Article_i1:</h4>

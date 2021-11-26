@@ -15,7 +15,7 @@ $article = new Article();
         </head>
         <body>
             <div class="container">
-                <a href="front-end.php">&larr; Back</a>
+               
                 <h4><?php echo $data['article_domain']?></h4>
                 <h1> <?php echo $data['article_title']; ?></h1>
                 

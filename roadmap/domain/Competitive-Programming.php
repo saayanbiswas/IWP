@@ -2,7 +2,7 @@
 include_once('../../includes/connection.php');
 include_once('../../includes/classArticle.php');
     $article = new Article();
-    $articles=$article->fetch_all();
+    $articles=$article->fetch_domain('Competitive-Programming');
 ?>
 
 <html>
@@ -41,7 +41,7 @@ include_once('../../includes/classArticle.php');
           </div>
         </div>
       </nav>
-      <h1> Front-End <h1>
+      <h1> Competitive-Programming <h1>
       <ol>
                 <?php foreach ($articles as $article){ ?>
                 <li>

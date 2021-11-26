@@ -9,6 +9,15 @@ class Article{
         
         return $query->fetchAll();
     }
+    public function fetch_domain($article_domain){
+        global $pdo;
+        
+        $query= $pdo->prepare("SELECT * from articles where article_domain=:domain");
+        $query->bindValue(':domain',$article_domain);
+        $query->execute();
+        
+        return $query->fetchAll();
+    }
 
     public function fetch_data($article_id){
         global $pdo;
