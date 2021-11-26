@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+
+.topHPart {
+  display: flex;
+  position: relative;
+}
+.topLeftPart {
+  margin: 30px;
+  flex: 5.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.paragraph {
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 50px;
+  background: rgba(135, 170, 247, 0.37);
+  font-family: "Orbitron", sans-serif;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+hr {
+  width: 40vw;
+}
+.titleText {
+  font-family: "Orbitron", sans-serif;
+  font-weight: bolder;
+  width: 40vw;
+  text-align: center;
+  padding: 5px 60px;
+  margin: 20px 20px 0 20px;
+  border-radius: 50px;
+  font-size: 50px;
+  background: rgba(135, 170, 247, 0.37);
+}
+.topPara {
+  margin: 10px;
+  font-size: medium;
+  color: rgb(121, 117, 117);
+}
+.lowPara {
+  font-size: small;
+  padding: 15px;
+  margin: 10px;
+  background: rgba(135, 170, 247, 0.37);
+  border-radius: 50px;
+}
+.topRightPart {
+  flex: 4.5;
+}
+.learnMore {
+  background: rgba(135, 170, 247, 0.37);
+}
+
+@media (max-width: 768px) {
+  .topRightPart img{
+    display: none;
+  }
+  
+}
+
+/*SERVICES*/
+
+.servContainer {
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: pink;
+  padding-bottom: 20px;
+  padding: 20px 100px;
+}
+.mainCard {
+  width: 24rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.cardContainer {
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+}
+.servTitle {
+  font-size: 30px;
+  padding: 5px;
+  padding-top: 10px;
+  background-color: pink;
+  text-align: center;
+}
+.cardTitleIcon {
+  display: flex;
+  justify-content: center;
+}
+.fontIcon {
+  line-height: 100px;
+  font-size: 50px;
+}
+
+/* OUR CONTENT */
+
+.containerCont {
+margin-top: 20px;
+  background-color: rgb(171, 224, 224);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
+}
+.contTitle {
+  font-size: 30px;
+}
+.icons {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.iconFA {
+  font-size: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contentBoxContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+}
+.Tilt {
+  margin: 20px;
+  text-align: center;
+  flex: 3;
+}
+.Tilt-inner {
+  background-color: rgb(206, 200, 200);
+  height: 200px;
+}
+
+
+
+/* FAQ */
+
+/* 
+.fragment,
+.fragment::before,
+.fragment::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+} */
+
+
+.faqTitle{
+    margin-top: 20px;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    background-color:#0262bb49;
+}
+
+section{
+    font-family: 'Orbitron', sans-serif;
+    box-sizing: border-box;
+    background-color:#0262bb49;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.accordion-item{
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0.5rem 2px 0.5rem rgba(0,0,0,0.1);
+}
+.accordion-link{
+    font-size: 1.3rem;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.accordion-link .fa-arrow-up{
+    display: none;
+}
+
+.accordion-link i{
+    color: black;
+    padding: 0.5rem;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 650ms;
+}
+.answer::before{
+    content:"";
+    position: absolute;
+    width: 0.6rem;
+    height: 90%;
+    background-color: aqua;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.answer p{
+    font-size: 1rem;
+    padding: 2rem;
+}
+.accordion-item:target .answer{
+    max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link .fa-arrow-down{
+    display: none;
+}
+.accordion-item:target .accordion-link .fa-arrow-up{
+    display: block;
+}
