@@ -35,9 +35,8 @@ a:hover {
   color: hotpink;
 }
 /*----------multi-level-accordian-menu------------*/
-.navbar{
+/* .navbar{
    background: linear-gradient(90deg, #0263cc 0%, #027cff 30%, #027cff 60%, #0263cc 90%);
-  /* background: #0264cc4b; */
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8) ;
   border: solid .05px rgba(255, 255, 255, 0.26) ;
   top: 0;
@@ -102,7 +101,7 @@ a:hover {
 }
 #navbarSupportedContent .active>a:not(:only-child):after {
   transform: rotate(90deg);
-}
+} */
 .hori-selector{
   display:inline-block;
   position:absolute;
