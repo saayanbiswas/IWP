@@ -578,3 +578,29 @@ text-decoration: none;
     display:inline-block;
     color:white;
   }
+  .article {
+    position:absolute;
+    width:80%;
+    left:20px;
+}
+.article pre, h2, h3{
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.article pre{
+    font-size:25px;
+}
+#article_domain{
+    font-size:30px !important;
+    text-decoration: solid !important;
+    color:blue;
+}
+
+#article_title{
+    font-size:50px !important;
+    text-decoration: solid !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

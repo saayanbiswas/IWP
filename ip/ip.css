@@ -29,7 +29,7 @@ a:link {
 a:visited 
 {
     text-decoration: none; 
-    decoration: none; 
+   /* decoration: none;*/ 
 }
 a:hover {
   color: hotpink;
@@ -552,4 +552,16 @@ footer .bottom-details .bottom_text {
   footer .content .link-boxes .input-box {
     width: 100%;
   }
+}
+
+
+#LoginSignupBtn{
+  position:absolute;
+  right:60px;
+  top:10px;
+}
+#LoginSignupBtn a{
+  text-decoration:none;
+  display:inline-block;
+  color:white;
 }

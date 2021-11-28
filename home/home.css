@@ -238,3 +238,13 @@ section{
 .accordion-item:target .accordion-link .fa-arrow-up{
     display: block;
 }
+#LoginSignupBtn{
+  position:absolute;
+  right:60px;
+  top:10px;
+}
+#LoginSignupBtn a{
+  text-decoration:none;
+  display:inline-block;
+  color:white;
+}
