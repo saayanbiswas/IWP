@@ -16,7 +16,12 @@ if($user!=NULL && $pass==$user['User_password'])
     header('Location:../home/home.php');
 }
 else{
-    echo "USERNAME OR PASSWORD INVALID";
-    
+    require('./navbar.php');?>
+
+    <center><h1 style="color:red">Invalid USERNAME or PASSWORD</h1></center>
+<?php
 }
 ?>
+
+    
+

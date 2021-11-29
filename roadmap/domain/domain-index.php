@@ -4,19 +4,19 @@ include_once('../../includes/connection.php');
 include_once('../../includes/classArticle.php');
 include_once('../../includes/classUser.php');
     $article = new Article();
-    $articles=$article->fetch_domain('Front-End-Development');
+    $articles=$article->fetch_domain($_GET['domain']);
     $user= new User();
      if(isset($_SESSION['login']) && $_SESSION['login']==True){
         $exists=$user->check_fav($articles, $_SESSION['user_id']);
       }else{
-        $string=$_SESSION['login'];
-        exit($string);
+        
+        $exists=array();
       }
         
 ?>
 
 <?php require('./navbar.php');?>
-      <h1> Front-End-Development <h1>
+      <h1> <?php echo $_GET['domain']?> <h1>
       <ol>
                 <?php foreach ($articles as $article){ ?>
                 <li>

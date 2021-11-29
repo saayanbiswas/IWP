@@ -5,7 +5,7 @@ include_once('../../includes/classArticle.php');
     $articles=$article->fetch_domain('Competitive-Programming');
 ?>
 
-<?php require('../navbar.php');?>
+<?php require('./navbar.php');?>
       <h1> Competitive-Programming <h1>
       <ol>
                 <?php foreach ($articles as $article){ ?>

@@ -16,7 +16,7 @@
           <a class="navbar-brand" href="#">IWP project</a>
           
           <?php if(isset($_SESSION['login']) && $_SESSION['login']==True){?>
-          <p id="LoginSignupBtn"><a  href="#"><?php echo $_SESSION['user_id']?></a> | <a href="../login/logout.php">LogOut</a></p>
+          <p id="LoginSignupBtn"><a  href="./domain/Favourites.php"><?php echo $_SESSION['user_id']?></a> | <a href="../login/logout.php">LogOut</a></p>
         <?php }else{?>  
           <p id="LoginSignupBtn"><a  href="../login/login.html">Login</a> | <a href="../login/login.html">SignUp</a></p>
         <?php }?>
@@ -61,17 +61,17 @@
           <div class="col-xs-6 col-sm-6 col-md-5 col-lg-3 domain " id="front">
               <h2>Front-end development</h2>
               <p>If you would like to get started as a front-end web developer, you are going to LOVE this road-map! Work on amazing projects ranging from a simple HTML page to a complete JavaScript based Google Chrome extension. </p>
-         <a href="domain/Front-End-Development.php" target="_blank" class="know-more">Click here to know more</a>
+         <a href="domain/domain-index.php?domain=Front-End-Development" target="_blank" class="know-more">Click here to know more</a>
           </div>
           <div class="col-xs-6 col-sm-6 col-md-5 col-lg-3 domain " id="back">
               <h2>Back-end development</h2>
               <p>This road-map will tell you about server, an application, and a database. Will give you a detailed view of what happens at the server side of a website, Databases and fetching API's.</p>
-              <a href="domain/Back-End-Development.php" target="_blank" class="know-more">Click here to know more</a>
+              <a href="domain/domain-index.php?domain=Back-End-Development" target="_blank" class="know-more">Click here to know more</a>
           </div>
           <div class="col-xs-6 col-sm-6 col-md-5 col-lg-3 domain " id="app">
               <h2>App development</h2>
               <p>. Whether you are a complete beginner or are coming from another language or platform, this road-map will go from setting up and installing Android Studio to building real apps that are useful and look great. </p>
-              <a href="domain/app.html" target="_blank" class="know-more">Click here to know more</a>
+              <a href="domain/domain-index.php?domain=App-Development" target="_blank" class="know-more">Click here to know more</a>
           </div>
       </div>
 
@@ -79,17 +79,17 @@
           <div class="col-xs-6 col-sm-6 col-md-5 col-lg-3 domain " id="competitive">
               <h2>Competitive programming</h2>
               <p>No less than a mental sport. One that asks to Learn about the creative approach to tech world and efficient use of coding tools</p>
-         <a href="domain/Competitive-Programming.php" target="_blank" class="know-more">Click here to know more</a>
+         <a href="domain/domain-index.php?domain=Competitive-Programming" target="_blank" class="know-more">Click here to know more</a>
           </div>
           <div class="col-xs-6 col-sm-6 col-md-5 col-lg-3 domain " id="cyber">
               <h2>Cyber Security</h2>
               <p>This road-map covers the fundamental building blocks of your required skill set - You will understand the threat and vulnerability landscape through threat modeling and risk assessments.</p>
-              <a href="domain/cyber.html" target="_blank" class="know-more">Click here to know more</a>
+              <a href="domain/domain-index.php?domain=Cyber-Security" target="_blank" class="know-more">Click here to know more</a>
           </div>
           <div class="col-xs-6 col-sm-6 col-md-5 col-lg-3 domain " id="cloud">
               <h2>Cloud computing</h2>
               <p>Get your hands dirty using these concepts of cloud. Evolution leading to Revolution – traditional IT already uses a variety of virtualization technologies to better utilize their physical IT resources.</p>
-              <a href="domain/cloud.html" target="_blank" class="know-more">Click here to know more</a>
+              <a href="domain/domain-index.php?domain=Cloud-Computing" target="_blank" class="know-more">Click here to know more</a>
           </div>
       </div>
 
@@ -97,17 +97,17 @@
           <div class="col-xs-6 col-sm-6 col-md-5 col-lg-3 domain " id="aiml">
               <h2>AI/ML</h2>
               <p>If you have no experience in ML development, it’s okay: this road-map includes both introductory and advanced level materials. </p>
-         <a href="domain/aiml.html" target="_blank" class="know-more">Click here to know more</a>
+         <a href="domain/domain/domain-index.php?domain=AI-ML" target="_blank" class="know-more">Click here to know more</a>
           </div>
           <div class="col-xs-6 col-sm-6 col-md-5 col-lg-3 domain " id="blockchain">
               <h2>Blockchain</h2>
               <p>Learn key Blockchain concepts, intuition and practical training to get you quickly up to speed with all things Crypto and Blockchain related. </p>
-              <a href="domain/blockchain.html" target="_blank" class="know-more">Click here to know more</a>
+              <a href="domain/domain-index.php?domain=Blockchain" target="_blank" class="know-more">Click here to know more</a>
           </div>
           <div class="col-xs-6 col-sm-6 col-md-5 col-lg-3 domain " id="arvr">
               <h2>AR/VR</h2>
               <p>“When we get to this [AR] world, a lot of the things we think about today as physical objects, like a TV, will be $1 apps in an AR app store” — Mark Zukerberg</p>
-              <a href="domain/arvr.html" target="_blank" class="know-more">Click here to know more</a>
+              <a href="domain/domain-index.php?domain=AR-VR" target="_blank" class="know-more">Click here to know more</a>
           </div>
       </div>
 

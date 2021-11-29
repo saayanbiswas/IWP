@@ -15,7 +15,7 @@
           <a class="navbar-brand" href="#">IWP project</a>
 
           <?php if(isset($_SESSION['login']) && $_SESSION['login']==True){?>
-          <p id="LoginSignupBtn"><a  href="#"><?php echo $_SESSION['user_id']?></a> | <a href="../login/logout.php">LogOut</a></p>
+          <p id="LoginSignupBtn"><a  href="../roadmap/domain/Favourites.php"><?php echo $_SESSION['user_id']?></a> | <a href="../login/logout.php">LogOut</a></p>
         <?php }else{?>  
           <p id="LoginSignupBtn"><a  href="../login/login.html">Login</a> | <a href="../login/login.html">SignUp</a></p>
         <?php }?>

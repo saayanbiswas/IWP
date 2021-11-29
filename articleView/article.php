@@ -25,7 +25,7 @@ if(isset($_GET['id'])){
     }
 
     else{
-        header('Location: index.php?id='.$id);
+        header('Location: ../roadmap/r.php');
         exit();
     }
 

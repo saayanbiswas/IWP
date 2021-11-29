@@ -19,7 +19,24 @@ class User{
     public function create($id, $pass, $email)
     {
         global $pdo;
-        $query = $pdo->prepare("INSERT INTO users VALUES('$id','$email','$pass','{}')");
+        $emptyarr=serialize(array());
+        $query = $pdo->prepare("INSERT INTO users VALUES('$id','$email','$pass','$emptyarr')");
         $query->execute();
+    }
+
+    public function check_fav($articles, $user_id)
+    {
+        $users= new User();
+        $user=$users->fetch_user($user_id);
+        $fav= unserialize($user['User_fav']);
+        $exists=array();
+        foreach ($articles as $article)
+        {
+            if (in_array($article['article_id'], $fav)) { 
+                array_push($exists,$article['article_id']);
+            } 
+        }
+        
+        return($exists);
     }
 }
